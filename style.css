@@ -33,7 +33,7 @@ main {
   box-shadow: 0 0 30px 30px rgba(206, 201, 201, 0.8);
   border: 0px solid var(--gray-10);
   border-radius: 20px;
-  width: 30%;
+  width: 20%;
   height: 50%;
   background-size: cover;
   background-image: linear-gradient(
