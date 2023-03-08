@@ -52,6 +52,7 @@ elInputUsername.onkeyup = function() {
     }
     else {
       strongUsername.classList.remove("hide"); // 조합 메세지 추가
+      elSuccessureMessage.classList.add('hide');
     }
   }
   else { // 4글자 이상이 아닐 때
