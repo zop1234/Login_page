@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>유효성 검사</title>
+    <link rel="stylesheet" href="global-style.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap" rel="stylesheet">
+    <script src="validator.js"></script>
+  </head>
+
+  <body>
+    <main>
+      <h1>회원가입</h1>
+
+      <fieldset>
+        <input type="text" id="username" placeholder="아이디" />
+      </fieldset>
+
+      <div class="success-message hide message">사용할 수 있는 아이디입니다</div>
+      <div class="failure-message hide message">아이디는 네 글자 이상이어야 합니다</div>
+      <div class="hard-id hide message">아이디는 영어 또는 숫자만 가능합니다</div>
+
+      <fieldset>
+        <input type="password" id="password" placeholder="비밀번호" />
+      </fieldset>
+
+      <div class="hard-pw hide message">최소 8자 이상하면서, 알파벳과 숫자 및 특수문자(@$!%*#?&) 는 하나 이상 포함되어야 합니다</div>
+
+      <fieldset>
+        <input
+          type="password"
+          id="password-retype"
+          placeholder="비밀번호 확인"
+        />
+      </fieldset>
+
+      <div class="mismatch-message hide message">비밀번호가 일치하지 않습니다</div>
+
+      <fieldset class="signup">
+        <button type = "reset">회원가입</button>
+      </fieldset>
+
+      <script src="script.js"></script>
+    </main>
+  </body>
+</html>
